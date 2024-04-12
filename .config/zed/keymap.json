@@ -1,0 +1,68 @@
+[
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "cmd-a": "project_panel::NewFile",
+      "cmd-d": "project_panel::Delete",
+      "cmd-r": "project_panel::Rename"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-tab": "pane::ActivatePrevItem",
+      "ctrl-tab": "pane::ActivateNextItem"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work only in normal mode
+      "space w": "workspace::Save",
+      "space e": "workspace::ToggleRightDock",
+      "s v": "pane::SplitRight",
+      "s s": "pane::SplitDown",
+      "s l": ["workspace::ActivatePaneInDirection", "Right"],
+      "s h": ["workspace::ActivatePaneInDirection", "Left"],
+      "s k": ["workspace::ActivatePaneInDirection", "Up"],
+      "s j": ["workspace::ActivatePaneInDirection", "Down"],
+      "space x": "pane::CloseActiveItem",
+      "K": "editor::Hover",
+      "space d": "editor::GoToDiagnostic",
+      "space t": "workspace::NewTerminal",
+      "space f r": "editor::FindAllReferences",
+      "space f f": "file_finder::Toggle",
+      "space c a": "editor::ToggleCodeActions",
+      "g n": "pane::ActivateNextItem",
+      "g p": "pane::ActivatePrevItem",
+      "space f d": "diagnostics::Deploy",
+      "space r n": "editor::Rename"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
+    "bindings": {
+      // visual, visual line & visual block modes
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in insert mode
+      // e.g.
+      // "j j": "vim::NormalBefore" // remap jj in insert mode to escape.
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in normal & visual mode
+      "space /": [
+        "editor::ToggleComments",
+        {
+          "advance_downwards": false
+        }
+      ]
+    }
+  }
+]
