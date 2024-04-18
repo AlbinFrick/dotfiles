@@ -42,6 +42,7 @@ yabai -m rule --add app="^Inkdrop$" manage=off
 yabai -m rule --add app="^App Store$" manage=off
 yabai -m rule --add app="^Email$" manage=off
 yabai -m rule --add app="^Music$" manage=off
+yabai -m rule --add app="^Todoist$" manage=off
 # yabai -m rule --add app="^iTerm2$" manage=off
 
 #yabai -m config external_bar all:37:0
