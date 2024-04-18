@@ -1,0 +1,10 @@
+[maintenance]
+	repo = /Users/albin.frick/EDF/Eniro/one-front
+
+[user]
+  email = abbzez@gmail.com
+  name  = Albin Frick
+
+[includeIf "gitdir:~/EDF/Eniro/**"]
+  path = ~/.config/git/eniro
+
