@@ -133,6 +133,7 @@ alias skhdconf="vim ~/dotfiles/.config/skhd/skhdrc"
 alias tui="taskwarrior-tui"
 alias pn="pnpm"
 alias x="exit"
+alias oo="cd ~/EDF/private/obsidian-notes/"
 
 # export DOCKER_HOST="unix:///Users/albin.frick/.colima/docker.sock"
 
