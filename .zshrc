@@ -175,3 +175,9 @@ listening() {
 }
 
 PATH=~/.console-ninja/.bin:$PATH
+
+
+eval "$(fzf --zsh)"
+
+eval "$(zoxide init zsh)"
+
