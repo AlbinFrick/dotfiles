@@ -11,7 +11,7 @@
     "dock": "bottom"
   },
   "base_keymap": "VSCode",
-  "theme": "Catppuccin Macchiato",
+  "theme": "Catppuccin Mocha",
   "telemetry": {
     "metrics": false
   },
@@ -23,5 +23,6 @@
     "dock": "right"
   },
   "tab_size": 2,
-  "always_treat_brackets_as_autoclosed": true
+  "always_treat_brackets_as_autoclosed": true,
+  "buffer_font_family": "FiraCode NF"
 }

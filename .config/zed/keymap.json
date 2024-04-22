@@ -11,7 +11,7 @@
     "bindings": {
       // put key-bindings here if you want them to work only in normal mode
       "space w": "workspace::Save",
-      "space e": "workspace::ToggleRightDock",
+      "space e": "project_panel::ToggleFocus",
       "s v": "pane::SplitRight",
       "s s": "pane::SplitDown",
       "s l": ["workspace::ActivatePaneInDirection", "Right"],
@@ -40,7 +40,9 @@
       "space 6": ["pane::ActivateItem", 5],
       "space 7": ["pane::ActivateItem", 6],
       "space 8": ["pane::ActivateItem", 7],
-      "space 9": ["pane::ActivateItem", 8]
+      "space 9": ["pane::ActivateItem", 8],
+      "space n": "pane::ActivateNextItem",
+      "space p": "pane::ActivatePrevItem"
     }
   },
   {
