@@ -135,7 +135,6 @@ alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time
 alias pn="pnpm"
 alias x="exit"
 alias oo="cd ~/EDF/private/obsidian-notes/"
-alias cd="z"
 
 # export DOCKER_HOST="unix:///Users/albin.frick/.colima/docker.sock"
 
