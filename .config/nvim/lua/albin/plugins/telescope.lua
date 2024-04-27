@@ -27,12 +27,16 @@ return {
 
     -- set keymaps
     local keymap = vim.keymap -- for conciseness
+    local builtin = require("telescope.builtin")
 
-    keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
-    keymap.set("n", "<leader>fo", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
-    keymap.set("n", "<leader>fw", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
-    keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
-    keymap.set("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Find keymaps" })
-    keymap.set("n", "<leader>fr", "<cmd>Telescope lsp_references<cr>", { desc = "Find references" })
+    keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Fuzzy find files in cwd" })
+    keymap.set("n", "<leader>fo", builtin.oldfiles, { desc = "Fuzzy find recent files" })
+    keymap.set("n", "<leader>fw", builtin.live_grep, { desc = "Find string in cwd" })
+    keymap.set("n", "<leader>fc", builtin.grep_string, { desc = "Find string under cursor in cwd" })
+    keymap.set("n", "<leader>fk", builtin.keymaps, { desc = "Find keymaps" })
+    keymap.set("n", "<leader>fr", builtin.lsp_references, { desc = "Find references" })
+    keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "Find diagnostics" })
+    keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Find existing buffers" })
+    keymap.set("n", "<leader>fa", builtin.resume, { desc = "Find resume" })
   end,
 }
