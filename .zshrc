@@ -116,7 +116,7 @@ function branch  {
 . $(brew --prefix)/etc/profile.d/z.sh
 
 alias t="tmux"
-alias tmuxconf="vim ~/.tmux.conf"
+alias tmuxconf="vim ~/dotfiles/.tmux.conf"
 alias lg="lazygit"
 alias ld="lazydocker"
 alias g="git"
@@ -135,6 +135,8 @@ alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time
 alias pn="pnpm"
 alias x="exit"
 alias oo="cd ~/EDF/private/obsidian-notes/"
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
 
 # export DOCKER_HOST="unix:///Users/albin.frick/.colima/docker.sock"
 
