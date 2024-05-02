@@ -8,7 +8,7 @@ local keymap = vim.keymap -- for conciseness
 -- General Keymaps -------------------
 
 -- use jk to exit insert mode
-keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+keymap.set("i", "kj", "<ESC>", { desc = "Exit insert mode with kj" })
 
 -- file manipulation
 keymap.set("n", "<leader>w", "<cmd>w<CR>", { desc = "Save file" })
