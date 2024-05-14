@@ -136,6 +136,7 @@ alias pn="pnpm"
 alias x="exit"
 alias oo="cd ~/EDF/private/obsidian-notes/"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+alias kitty="kitty --config ~/.config/kitty/kitty.conf"
 
 
 # export DOCKER_HOST="unix:///Users/albin.frick/.colima/docker.sock"
@@ -152,7 +153,10 @@ export PATH="/Users/albin.frick/.rd/bin:$PATH"
 
 # pnpm
 export PNPM_HOME="/Users/albin.frick/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 # pnpm end
 
 # fnm

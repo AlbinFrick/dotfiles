@@ -48,3 +48,14 @@ keymap.set("n", "<leader>nsj", "<C-w>s<cmd>Neorg journal<CR>", { desc = "Open ne
 
 -- OIL ----
 keymap.set("n", "<leader>fb", "<CMD>Oil<CR>", { desc = "Open Files in Buffer" })
+
+-- OBSIDIAN ----
+keymap.set(
+  "n",
+  "<leader>on",
+  ":ObsidianTemplate <CR> :lua vim.cmd([[1,/^\\S/s/^\\n\\{1,}//]])<CR>",
+  { desc = "Add note template" }
+)
+keymap.set("n", "<leader>of", ":s/\\(# \\)[^_]*_/\\1/ | s/-/ /g<cr>", { desc = "formats file" })
+
+keymap.set("n", "<leader>rln", "<cmd>set rnu<CR>", { desc = "Set [R]elative [L]ine [N]umber" })

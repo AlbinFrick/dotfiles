@@ -3,9 +3,13 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
+    "folke/neodev.nvim",
     { "antosha417/nvim-lsp-file-operations", config = true },
   },
   config = function()
+    -- setup neodev
+    require("neodev").setup({})
+
     -- import lspconfig plugin
     local lspconfig = require("lspconfig")
 

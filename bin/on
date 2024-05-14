@@ -6,7 +6,14 @@ if [ -z "$1" ]; then
 fi
 
 file_name=$(echo "$1" | tr ' ' '-')
+
+if [ "$#" -eq 2 ]; then
+  directory=$2
+else
+  directory='inbox'
+fi
+
 formatted_file_name=$(date "+%Y-%m-%d")_$file_name.md
 cd ~/EDF/private/obsidian-notes || exit
-touch "inbox/${formatted_file_name}"
-nvim "inbox/${formatted_file_name}"
+touch "${directory}/${formatted_file_name}"
+nvim "${directory}/${formatted_file_name}"

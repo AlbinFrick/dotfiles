@@ -23,7 +23,13 @@ return {
         path = "~/EDF/private/obsidian-notes",
       },
     },
+    notes_subdir = "inbox",
+    new_notes_location = "notes_subdir",
 
-    -- see below for full list of options 👇
+    templates = {
+      subdir = "templates",
+      date_format = "%Y-%m-%d",
+      time_format = "%H:%M:%S",
+    },
   },
 }
