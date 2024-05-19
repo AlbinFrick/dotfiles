@@ -8,7 +8,7 @@ return {
       },
     },
     keys = {
-      { "<leader>e", "<Cmd>Neotree reveal toggle<CR>", desc = "Toggle NeoTree" },
+      { "<leader>ne", "<Cmd>Neotree reveal toggle<CR>", desc = "Toggle NeoTree" },
     },
   },
 }

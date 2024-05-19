@@ -138,7 +138,6 @@ alias oo="cd ~/EDF/private/obsidian-notes/"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 alias kitty="kitty --config ~/.config/kitty/kitty.conf"
 
-
 # export DOCKER_HOST="unix:///Users/albin.frick/.colima/docker.sock"
 
 export EDITOR=/opt/homebrew/bin/nvim

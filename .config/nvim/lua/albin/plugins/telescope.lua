@@ -36,7 +36,7 @@ return {
     keymap.set("n", "<leader>fk", builtin.keymaps, { desc = "Find keymaps" })
     keymap.set("n", "<leader>fr", builtin.lsp_references, { desc = "Find references" })
     keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "Find diagnostics" })
-    keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Find existing buffers" })
+    -- keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Find existing buffers" })
     keymap.set("n", "<leader>fa", builtin.resume, { desc = "Find resume" })
   end,
 }

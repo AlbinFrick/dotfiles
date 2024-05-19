@@ -20,10 +20,10 @@ keymap.set("n", "ss", "<C-w>s", { desc = "Split window horizontally" }) -- split
 keymap.set("n", "se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
 keymap.set("n", "<leader>x", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 
-keymap.set("n", "<Right>", "<cmd>vertical resize +5<CR>", { desc = "increase pane size" }) -- make split windows equal width & height
-keymap.set("n", "<Left>", "<cmd>vertical resize -5<CR>", { desc = "decrease pane size" }) -- make split windows equal width & height
-keymap.set("n", "<Up>", "<cmd>resize +5<CR>", { desc = "increase pane size" }) -- make split windows equal width & height
-keymap.set("n", "<Down>", "<cmd>resize -5<CR>", { desc = "decrease pane size" }) -- make split windows equal width & height
+keymap.set("n", "<M-,>", "<cmd>vertical resize +5<CR>", { desc = "increase pane size" }) -- make split windows equal width & height
+keymap.set("n", "<M-.>", "<cmd>vertical resize -5<CR>", { desc = "decrease pane size" }) -- make split windows equal width & height
+keymap.set("n", "<M-m>", "<cmd>resize +5<CR>", { desc = "increase pane size" }) -- make split windows equal width & height
+keymap.set("n", "<M-n>", "<cmd>resize -5<CR>", { desc = "decrease pane size" }) -- make split windows equal width & height
 
 -- window navigation
 keymap.set("n", "sl", "<C-w>l", { desc = "Move to right split" })
@@ -45,9 +45,6 @@ keymap.set("n", "<leader>ni", "<cmd>Neorg index<CR>", { desc = "Open neorg on in
 keymap.set("n", "<leader>nn", "<cmd>Neorg<CR>", { desc = "Run neorg" })
 keymap.set("n", "<leader>nj", "<cmd>Neorg journal<CR>", { desc = "Open neorg journal" })
 keymap.set("n", "<leader>nsj", "<C-w>s<cmd>Neorg journal<CR>", { desc = "Open neorg journal in horizontal split" })
-
--- OIL ----
-keymap.set("n", "<leader>fb", "<CMD>Oil<CR>", { desc = "Open Files in Buffer" })
 
 -- OBSIDIAN ----
 keymap.set(
