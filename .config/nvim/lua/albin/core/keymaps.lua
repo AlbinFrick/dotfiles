@@ -6,6 +6,9 @@ local keymap = vim.keymap -- for conciseness
 
 ---------------------
 -- General Keymaps -------------------
+--
+-- Options
+keymap.set("n", "<leader>no", "<cmd>noh<CR>", { desc = "Remove highlighting" })
 
 -- use jk to exit insert mode
 keymap.set("i", "kj", "<ESC>", { desc = "Exit insert mode with kj" })
