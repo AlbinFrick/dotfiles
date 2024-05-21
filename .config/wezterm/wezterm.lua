@@ -9,7 +9,11 @@ local config = wezterm.config_builder()
 -- For example, changing the color scheme:
 config.color_scheme = "Catppuccin Mocha"
 
+-- Window
 config.window_decorations = "RESIZE"
+config.window_background_opacity = 0.85
+config.macos_window_background_blur = 8
+
 config.enable_tab_bar = false
 
 config.font = wezterm.font("Comic Mono")
