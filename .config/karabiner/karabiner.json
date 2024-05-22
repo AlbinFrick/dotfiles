@@ -6558,12 +6558,12 @@
             ]
           },
           {
-            "description": "Tab to Hyper",
+            "description": "d to Hyper",
             "manipulators": [
               {
-                "description": "tab = tab(click) | hyper(hold)",
+                "description": "d = d(click) | hyper(hold)",
                 "from": {
-                  "key_code": "tab",
+                  "key_code": "d",
                   "modifiers": {
                     "optional": ["any"]
                   }
@@ -6580,7 +6580,7 @@
                 ],
                 "to_if_alone": [
                   {
-                    "key_code": "tab"
+                    "key_code": "d"
                   }
                 ],
                 "type": "basic"
@@ -6890,4 +6890,3 @@
     }
   ]
 }
-
