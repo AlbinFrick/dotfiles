@@ -6651,28 +6651,6 @@
                 "type": "basic"
               }
             ]
-          },
-          {
-            "description": "Caps Lock → Meh Key (⌃⌥⇧) (Caps Lock if alone)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "spacebar"
-                },
-                "to": [
-                  {
-                    "key_code": "left_shift",
-                    "modifiers": ["left_control", "left_option"]
-                  }
-                ],
-                "to_if_alone": [
-                  {
-                    "key_code": "spacebar"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
           }
         ]
       },
@@ -6912,4 +6890,3 @@
     }
   ]
 }
-
