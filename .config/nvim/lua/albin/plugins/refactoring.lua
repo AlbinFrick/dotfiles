@@ -6,7 +6,7 @@ return {
   },
   config = function()
     require("refactoring").setup({
-      prompt_func_return_type = {
+      promet_func_return_type = {
         go = false,
         java = false,
 
