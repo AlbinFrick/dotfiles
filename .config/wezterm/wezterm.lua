@@ -17,8 +17,8 @@ config.window_decorations = "RESIZE"
 config.enable_tab_bar = false
 
 config.font = wezterm.font("Comic Mono")
-config.font_size = 14.0
-config.line_height = 1.2
+config.font_size = 15.0
+config.line_height = 1.3
 
 -- and finally, return the configuration to wezterm
 return config
