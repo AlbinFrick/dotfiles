@@ -16,7 +16,7 @@ return {
         max_width = 100,
       },
     })
-    vim.keymap.set("n", "<leader>fb", "<CMD>Oil<CR>", { desc = "Open Files in Buffer" })
-    vim.keymap.set("n", "<leader>e", require("oil").toggle_float, { desc = "Open Files floating in Buffer" })
+    vim.keymap.set("n", "<leader>e", "<CMD>Oil<CR>", { desc = "Open Files in Buffer" })
+    vim.keymap.set("n", "<leader>fb", require("oil").toggle_float, { desc = "Open Files floating in Buffer" })
   end,
 }
