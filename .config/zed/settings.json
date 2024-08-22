@@ -24,5 +24,8 @@
   },
   "tab_size": 2,
   "always_treat_brackets_as_autoclosed": true,
-  "buffer_font_family": "Comic Sans MS"
+  "buffer_font_family": "FiraCode Nerd Font",
+  "tab_bar": {
+    "show": false
+  }
 }

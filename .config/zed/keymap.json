@@ -56,7 +56,7 @@
     "bindings": {
       // put key-bindings here if you want them to work in insert mode
       // e.g.
-      // "j j": "vim::NormalBefore" // remap jj in insert mode to escape.
+      "k j": "vim::NormalBefore" // remap jj in insert mode to escape.
     }
   },
   {
