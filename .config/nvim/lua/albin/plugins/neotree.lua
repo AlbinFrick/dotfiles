@@ -4,11 +4,11 @@ return {
     opts = {
       close_if_last_window = true,
       window = {
-        position = "float",
+        position = "left",
       },
     },
     keys = {
-      { "<leader>ne", "<Cmd>Neotree reveal toggle<CR>", desc = "Toggle NeoTree" },
+      { "<leader>e", "<Cmd>Neotree reveal toggle<CR>", desc = "Toggle NeoTree" },
     },
   },
 }
