@@ -16,7 +16,7 @@ config.window_decorations = "RESIZE"
 
 config.enable_tab_bar = false
 
-config.font = wezterm.font("Comic Mono")
+config.font = wezterm.font("MesloLGS Nerd Font Mono")
 config.font_size = 15.0
 config.line_height = 1.3
 

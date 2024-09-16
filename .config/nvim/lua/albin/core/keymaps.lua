@@ -43,11 +43,11 @@ keymap.set("n", "<leader>gl", "<cmd>Gitsigns blame_line<CR>", { desc = "Git blam
 keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<CR>", { desc = "Finds todo-comments" })
 
 --NEORG Global stuff----
-keymap.set("n", "<leader>nr", "<cmd>Neorg return<CR>", { desc = "Return to code from neorg" })
-keymap.set("n", "<leader>ni", "<cmd>Neorg index<CR>", { desc = "Open neorg on index" })
-keymap.set("n", "<leader>nn", "<cmd>Neorg<CR>", { desc = "Run neorg" })
-keymap.set("n", "<leader>nj", "<cmd>Neorg journal<CR>", { desc = "Open neorg journal" })
-keymap.set("n", "<leader>nsj", "<C-w>s<cmd>Neorg journal<CR>", { desc = "Open neorg journal in horizontal split" })
+-- keymap.set("n", "<leader>nr", "<cmd>Neorg return<CR>", { desc = "Return to code from neorg" })
+-- keymap.set("n", "<leader>ni", "<cmd>Neorg index<CR>", { desc = "Open neorg on index" })
+-- keymap.set("n", "<leader>nn", "<cmd>Neorg<CR>", { desc = "Run neorg" })
+-- keymap.set("n", "<leader>nj", "<cmd>Neorg journal<CR>", { desc = "Open neorg journal" })
+-- keymap.set("n", "<leader>nsj", "<C-w>s<cmd>Neorg journal<CR>", { desc = "Open neorg journal in horizontal split" })
 
 -- OBSIDIAN ----
 keymap.set(

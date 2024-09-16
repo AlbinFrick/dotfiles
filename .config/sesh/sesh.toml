@@ -1,4 +1,8 @@
 [[session]]
+name = "Dotfiles"
+path = "~/dotfiles/"
+
+[[session]]
 name = "neovim config"
 path = "~/dotfiles/.config/nvim"
 startup_command = "vim"

@@ -123,3 +123,5 @@ function branch  {
 
 # Add all script in bin folder to path
 export PATH=~/bin:$PATH
+
+PATH=~/.console-ninja/.bin:$PATH
