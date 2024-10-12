@@ -3,8 +3,8 @@
 export WHITE=0xffffffff
 
 # -- Solarized Osaka Scheme --
-export BAR_COLOR=0xcc1e1e2e
-#  export ITEM_BG_COLOR=
+export BAR_COLOR=
+ export ITEM_BG_COLOR=0xff1e1e2e
 #  export ITEM_BG_COLOR=0xff073642
 # export ACCENT_COLOR=0xff29eedf
 export ACCENT_COLOR=$WHITE
