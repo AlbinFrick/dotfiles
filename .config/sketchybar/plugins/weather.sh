@@ -3,9 +3,9 @@ sketchybar --set $NAME \
   icon.color=0xff5edaff
 
 # fetch weather data
-LOCATION="Seoul"
+LOCATION="Lycksele"
 REGION=""
-LANG="ko"
+LANG="uk"
 
 # Line below replaces spaces with +
 LOCATION_ESCAPED="${LOCATION// /+}+${REGION// /+}"
