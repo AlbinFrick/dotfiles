@@ -194,16 +194,24 @@ if.app-id = 'com.hnc.Discord'
 run = ['move-node-to-workspace 8']
 
 [[on-window-detected]]
+if.app-id = 'com.apple.MobileSMS'
+run = ['move-node-to-workspace 8']
+
+[[on-window-detected]]
 if.app-id = "md.obsidian"
 run = ['move-node-to-workspace 9']
 
-[[on-window-detected]]
+  [[on-window-detected]]
 if.app-id = "io.capacities.app"
 run = ['move-node-to-workspace 9']
 
 [[on-window-detected]]
 if.app-id = "company.thebrowser.Browser"
 run = ['move-node-to-workspace 1']
+
+[[on-window-detected]]
+if.app-id = "com.github.wez.wezterm"
+run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = "com.tinyspeck.slackmacgap"
