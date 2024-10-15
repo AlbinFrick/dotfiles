@@ -3962,7 +3962,7 @@
                 "type": "basic"
               },
               {
-                "description": "e = ctrl + e",
+                "description": "e = safari",
                 "from": {
                   "key_code": "e",
                   "modifiers": {
@@ -3974,12 +3974,7 @@
                     ]
                   }
                 },
-                "to": [
-                  {
-                    "key_code": "e",
-                    "modifiers": ["left_control"]
-                  }
-                ],
+                "to": [{ "shell_command": "open -a Safari" }],
                 "type": "basic"
               },
               {
@@ -5925,3 +5920,4 @@
     }
   ]
 }
+
