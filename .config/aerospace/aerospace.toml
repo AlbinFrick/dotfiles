@@ -203,7 +203,7 @@ run = ['move-node-to-workspace 9']
 
   [[on-window-detected]]
 if.app-id = "io.capacities.app"
-run = ['move-node-to-workspace 9']
+run = ['move-node-to-workspace 10']
 
 [[on-window-detected]]
 if.app-id = "company.thebrowser.Browser"
