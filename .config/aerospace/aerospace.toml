@@ -190,6 +190,18 @@ alt-shift-r = ['exec-and-forget /opt/homebrew/bin/sketchybar --reload']
 
 
 [[on-window-detected]]
+if.app-id = "company.thebrowser.Browser"
+run = ['move-node-to-workspace 1']
+
+[[on-window-detected]]
+if.app-id = "com.todesktop.230313mzl4w4u92"
+run = ['move-node-to-workspace 2']
+
+[[on-window-detected]]
+if.app-id = "com.github.wez.wezterm"
+run = ['move-node-to-workspace 2']
+
+[[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
 run = ['move-node-to-workspace 8']
 
@@ -205,13 +217,6 @@ run = ['move-node-to-workspace 9']
 if.app-id = "io.capacities.app"
 run = ['move-node-to-workspace 10']
 
-[[on-window-detected]]
-if.app-id = "company.thebrowser.Browser"
-run = ['move-node-to-workspace 1']
-
-[[on-window-detected]]
-if.app-id = "com.github.wez.wezterm"
-run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = "com.tinyspeck.slackmacgap"
@@ -219,4 +224,8 @@ run = ['move-node-to-workspace 10']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.weather'
+run = ['layout floating']
+
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
 run = ['layout floating']
