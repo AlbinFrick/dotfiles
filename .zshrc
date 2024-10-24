@@ -125,3 +125,6 @@ function branch  {
 export PATH=~/bin:$PATH
 
 PATH=~/.console-ninja/.bin:$PATH
+
+# Emacs
+export PATH="~/.config/emacs/bin:$PATH"

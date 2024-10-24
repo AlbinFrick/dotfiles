@@ -3,7 +3,7 @@ return {
   opts = {},
   config = function()
     require("transparent").setup({
-      vim.keymap.set("n", "<leader>t", require("transparent").toggle, { desc = "Transparent Window" })
+      vim.keymap.set("n", "<leader>t", require("transparent").toggle, { desc = "Transparent Window" }),
     })
   end,
 }
