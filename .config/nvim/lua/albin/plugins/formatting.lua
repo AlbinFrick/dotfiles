@@ -4,8 +4,8 @@ return {
   opts = {
     formatters_by_ft = {
       lua = { "stylua" },
-      javascript = { "prettier" },
-      typescript = { "prettier" },
+      javascript = { "deno_fmt" },
+      typescript = { "deno_fmt" },
       javascriptreact = { "prettier" },
       typescriptreact = { "prettier" },
       css = { "prettier" },
@@ -14,7 +14,7 @@ return {
       yaml = { "prettier" },
       markdown = { "prettier" },
       html = { "prettier" },
-      svelte = { "prettierd", "prettier", stop_after_first = true },
+      svelte = { "deno_fmt", "prettier" },
     },
     format_on_save = {
       timeout_ms = 2500,

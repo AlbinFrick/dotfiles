@@ -6,11 +6,11 @@ return {
     local lint = require("lint")
 
     lint.linters_by_ft = {
-      javascript = { "eslint_d" },
-      typescript = { "eslint_d" },
+      javascript = { "deno" },
+      typescript = { "deno" },
       javascriptreact = { "eslint_d" },
       typescriptscriptreact = { "eslint_d" },
-      svelte = { "eslint_d" },
+      svelte = { "deno" },
       astro = { "eslint_d" },
     }
 
