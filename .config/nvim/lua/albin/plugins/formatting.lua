@@ -10,11 +10,12 @@ return {
       typescriptreact = { "prettier" },
       css = { "prettier" },
       scss = { "prettier" },
-      json = { "prettier" },
+      json = { "deno_fmt", "prettier" },
       yaml = { "prettier" },
       markdown = { "prettier" },
       html = { "prettier" },
-      svelte = { "deno_fmt", "prettier" },
+      svelte = { "deno_fmt" },
+      jsonc = { "deno_fmt", "prettier" },
     },
     format_on_save = {
       timeout_ms = 2500,
@@ -38,5 +39,9 @@ return {
     conform.formatters.prettier = {
       prepend_args = { "--prose-wrap", "always" },
     }
+
+    -- conform.formatters.deno_fmt = {
+    --   prepend_args = { "--", "--unstable-component" },
+    -- }
   end,
 }
