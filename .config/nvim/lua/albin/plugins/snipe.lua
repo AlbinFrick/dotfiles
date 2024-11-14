@@ -13,7 +13,14 @@ return {
   config = function()
     local snipe = require("snipe")
     snipe.setup({
+      ui = {
+        open_win_override = {
+          -- title = "My Window Title",
+          border = "rounded", -- use "rounded" for rounded border
+        },
+      },
       hints = {
+
         -- Charaters to use for hints
         -- make sure they don't collide with the navigation keymaps
         -- If you remove `j` and `k` from below, you can navigate in the plugin
