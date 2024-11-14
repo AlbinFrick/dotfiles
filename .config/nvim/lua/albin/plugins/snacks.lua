@@ -27,13 +27,6 @@ return {
       desc = "Dismiss All Notifications",
     },
     {
-      "<leader>bd",
-      function()
-        Snacks.bufdelete()
-      end,
-      desc = "Delete Buffer",
-    },
-    {
       "<leader>gg",
       function()
         Snacks.lazygit()
