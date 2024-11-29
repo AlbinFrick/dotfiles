@@ -22,7 +22,7 @@ apple_prefs=(
 apple_activity=(
   icon=$ACTIVITY
   label="Activity"
-  click_script="open -a 'Activity Monitor'; $POPUP_OFF"
+  click_script="open -a 'NeoHtop'; $POPUP_OFF"
 )
 
 apple_lock=(
