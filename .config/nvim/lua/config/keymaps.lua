@@ -5,4 +5,12 @@
 local key = vim.keymap.set
 
 key("i", "kj", "<esc>", { desc = "Got to normal mode" })
-key("n", "<leader>sf", "<cmd>:w<cr>", { desc = "Save File" })
+key("n", "<leader>wf", "<cmd>:w<cr>", { desc = "Write File" })
+
+key(
+  "n",
+  "<leader>on",
+  ":ObsidianTemplate <CR> :lua vim.cmd([[1,/^\\S/s/^\\n\\{1,}//]])<CR>",
+  { desc = "Add note template" }
+)
+key("n", "<leader>of", ":s/\\(# \\)[^_]*_/\\1/ | s/-/ /g<cr>", { desc = "formats file" })
