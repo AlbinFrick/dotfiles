@@ -9,19 +9,7 @@
                 },
                 "rules": [
                     {
-                        "description": "Capslock → Ctrl (Esc if alone)",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "caps_lock" },
-                                "to": [{ "key_code": "left_control" }],
-                                "to_if_alone": [{ "key_code": "escape" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Hyper Navigation",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "command + h = shift + left",
@@ -1122,7 +1110,6 @@
                     },
                     {
                         "description": "Hyper Deletion",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "option + n = delete whole line",
@@ -1288,7 +1275,6 @@
                     },
                     {
                         "description": "Hyper MouseKey",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "keypad0 = mouse left click",
@@ -2086,7 +2072,6 @@
                     },
                     {
                         "description": "Hyper Window",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "shift + tab = alter tab",
@@ -2502,7 +2487,6 @@
                     },
                     {
                         "description": "Hyper Terminal",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "command + d = define",
@@ -2643,7 +2627,6 @@
                     },
                     {
                         "description": "Hyper Clipboard",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "command + 1 = copy to clip1",
@@ -2949,7 +2932,6 @@
                     },
                     {
                         "description": "Hyper Shifter",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "command + hyphen = scale down",
@@ -3169,7 +3151,6 @@
                     },
                     {
                         "description": "Hyper Functional",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "command + F1 = desktop 1",
@@ -3507,7 +3488,6 @@
                     },
                     {
                         "description": "capslock to hyper",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "capslock = escape(click) | hyper(hold)",
@@ -3572,8 +3552,7 @@
                         ]
                     },
                     {
-                        "description": "Right command → Meh Key (⌃⌥⇧) (Esc if alone)",
-                        "enabled": false,
+                        "description": "Caps Lock → Meh Key (⌃⌥⇧) (Caps Lock if alone)",
                         "manipulators": [
                             {
                                 "from": { "key_code": "right_command" },
@@ -3583,7 +3562,7 @@
                                         "modifiers": ["left_control", "left_option"]
                                     }
                                 ],
-                                "to_if_alone": [{ "key_code": "escape" }],
+                                "to_if_alone": [{ "key_code": "right_command" }],
                                 "type": "basic"
                             }
                         ]
@@ -3639,6 +3618,14 @@
                         "is_keyboard": true,
                         "vendor_id": 13
                     }
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 835,
+                        "vendor_id": 1452
+                    },
+                    "ignore": true
                 }
             ],
             "name": "Default profile",
