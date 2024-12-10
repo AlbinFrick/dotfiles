@@ -130,3 +130,8 @@ PATH=~/.console-ninja/.bin:$PATH
 
 # Emacs
 export PATH="~/.config/emacs/bin:$PATH"
+
+# Load environment variables from .env file
+if [ -f "$HOME/.env" ]; then
+  export $(grep -v '^#' "$HOME/.env" | xargs)
+fi
