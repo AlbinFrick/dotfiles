@@ -2,6 +2,11 @@
     "profiles": [
         {
             "complex_modifications": {
+                "parameters": {
+                    "basic.to_delayed_action_delay_milliseconds": 200,
+                    "basic.to_if_alone_timeout_milliseconds": 200,
+                    "basic.to_if_held_down_threshold_milliseconds": 100
+                },
                 "rules": [
                     {
                         "description": "Capslock → Ctrl (Esc if alone)",
@@ -16,6 +21,7 @@
                     },
                     {
                         "description": "Hyper Navigation",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "command + h = shift + left",
@@ -1116,6 +1122,7 @@
                     },
                     {
                         "description": "Hyper Deletion",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "option + n = delete whole line",
@@ -1281,6 +1288,7 @@
                     },
                     {
                         "description": "Hyper MouseKey",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "keypad0 = mouse left click",
@@ -2078,6 +2086,7 @@
                     },
                     {
                         "description": "Hyper Window",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "shift + tab = alter tab",
@@ -2329,6 +2338,7 @@
                     },
                     {
                         "description": "Hyper Application",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "command + e = finder",
@@ -2492,6 +2502,7 @@
                     },
                     {
                         "description": "Hyper Terminal",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "command + d = define",
@@ -2632,6 +2643,7 @@
                     },
                     {
                         "description": "Hyper Clipboard",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "command + 1 = copy to clip1",
@@ -2937,6 +2949,7 @@
                     },
                     {
                         "description": "Hyper Shifter",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "command + hyphen = scale down",
@@ -3156,6 +3169,7 @@
                     },
                     {
                         "description": "Hyper Functional",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "command + F1 = desktop 1",
@@ -3492,12 +3506,13 @@
                         ]
                     },
                     {
-                        "description": "d to hyper",
+                        "description": "capslock to hyper",
+                        "enabled": false,
                         "manipulators": [
                             {
-                                "description": "d = d(click) | hyper(hold)",
+                                "description": "capslock = escape(click) | hyper(hold)",
                                 "from": {
-                                    "key_code": "d",
+                                    "key_code": "caps_lock",
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [
@@ -3506,7 +3521,7 @@
                                         "modifiers": ["right_command", "right_control", "right_option"]
                                     }
                                 ],
-                                "to_if_alone": [{ "key_code": "d" }],
+                                "to_if_alone": [{ "key_code": "escape" }],
                                 "type": "basic"
                             },
                             {
@@ -3561,14 +3576,14 @@
                         "enabled": false,
                         "manipulators": [
                             {
-                                "from": { "key_code": "d" },
+                                "from": { "key_code": "right_command" },
                                 "to": [
                                     {
                                         "key_code": "left_shift",
                                         "modifiers": ["left_control", "left_option"]
                                     }
                                 ],
-                                "to_if_alone": [{ "key_code": "d" }],
+                                "to_if_alone": [{ "key_code": "escape" }],
                                 "type": "basic"
                             }
                         ]
