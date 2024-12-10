@@ -73,6 +73,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias c='clear'
 alias t="tmux"
+alias ze="cd ~/.config/zellij/ && zellij options --default-cwd ~"
 alias tmuxconf="vim ~/dotfiles/.tmux.conf"
 alias lg="lazygit"
 alias ld="lazydocker"
@@ -88,6 +89,7 @@ alias yabaiconf="vim ~/dotfiles/.config/yabai/yabairc"
 alias skhdconf="vim ~/dotfiles/.config/skhd/skhdrc"
 alias tui="taskwarrior-tui"
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias ll="eza --color=always --long --git  --icons=always --no-user -la "
 alias pn="pnpm"
 alias x="exit"
 alias oo="cd ~/EDF/private/obsidian-notes/"
