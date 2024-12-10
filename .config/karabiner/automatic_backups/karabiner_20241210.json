@@ -2329,7 +2329,6 @@
                     },
                     {
                         "description": "Hyper Application",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "command + e = finder",
@@ -2493,7 +2492,6 @@
                     },
                     {
                         "description": "Hyper Terminal",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "command + d = define",
@@ -3523,6 +3521,20 @@
                                 "to": [
                                     {
                                         "key_code": "caps_lock",
+                                        "modifiers": ["left_control"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "spacebar = language switch",
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": { "mandatory": ["right_command", "right_control", "right_shift", "right_option"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "spacebar",
                                         "modifiers": ["left_control"]
                                     }
                                 ],
