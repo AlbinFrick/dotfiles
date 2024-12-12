@@ -14,3 +14,5 @@ key(
   { desc = "Add note template" }
 )
 key("n", "<leader>of", ":s/\\(# \\)[^_]*_/\\1/ | s/-/ /g<cr>", { desc = "formats file" })
+
+key("n", "<leader>z", "<cmd>ZenMode<cr>", { desc = "Zen mode" })
