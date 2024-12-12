@@ -1,4 +1,4 @@
-theme "tokyo-night"
+theme "catppuccin-mocha"
 default_layout "tabs-top"
 layout_dir "./layouts"
 on_force_close "quit"
