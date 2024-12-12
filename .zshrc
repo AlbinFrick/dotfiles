@@ -93,6 +93,8 @@ alias pn="pnpm"
 alias x="exit"
 alias oo="cd ~/EDF/private/obsidian-notes/"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+## NB
+alias n="nb"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
