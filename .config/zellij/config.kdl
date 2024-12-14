@@ -2,6 +2,7 @@ theme "catppuccin-mocha"
 default_layout "tabs-top"
 layout_dir "./layouts"
 on_force_close "quit"
+pane_frames false
 
 // If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defaults=true"
 keybinds {
