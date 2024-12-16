@@ -17,3 +17,6 @@ key("n", "<leader>wf", "<cmd>:w<cr>", { desc = "Write File" })
 -- key("n", "<leader>od", "<cmd>ObsidianDailies<CR>", { desc = "Open daily picker" })
 
 key("n", "<leader>z", "<cmd>ZenMode<cr>", { desc = "Zen mode" })
+
+key("n", "<m-BS>", "dbx", { desc = "Detele word backwards" })
+key("i", "<m-BS>", "<esc>dbxi", { desc = "Detele word backwards" })
