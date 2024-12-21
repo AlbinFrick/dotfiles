@@ -112,7 +112,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Shell integrations
 # eval "$(fzf --zsh)"
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 eval "$(fnm env --use-on-cd)"
 
 # pnpm
