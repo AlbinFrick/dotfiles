@@ -44,15 +44,17 @@ config.font = wezterm.font("MesloLGS Nerd Font Mono")
 config.font_size = 15.0
 config.line_height = 1.3
 
--- config.keys = {
--- 	-- Turn off the default CMD-m Hide action, allowing CMD-m to
--- 	-- be potentially recognized and handled by the tab
--- 	{
--- 		key = "m",
--- 		mods = "CMD",
--- 		action = wezterm.action.DisableDefaultAssignment,
--- 	},
--- }
+config.keys = {
+	-- Turn off the default CMD-m Hide action, allowing CMD-m to
+	-- be potentially recognized and handled by the tab
+	{
+		key = "m",
+		mods = "CMD",
+		action = wezterm.action.DisableDefaultAssignment,
+	},
+}
+
+config.send_composed_key_when_left_alt_is_pressed = true
 
 -- and finally, return the configuration to wezterm
 return config
