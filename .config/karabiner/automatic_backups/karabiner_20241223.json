@@ -3547,16 +3547,17 @@
                     },
                     {
                         "description": "Right command → Meh Key (⌃⌥⇧) (Esc if alone)",
+                        "enabled": false,
                         "manipulators": [
                             {
-                                "from": { "key_code": "right_command" },
+                                "from": { "key_code": "d" },
                                 "to": [
                                     {
                                         "key_code": "left_shift",
                                         "modifiers": ["left_control", "left_option"]
                                     }
                                 ],
-                                "to_if_alone": [{ "key_code": "escape" }],
+                                "to_if_alone": [{ "key_code": "d" }],
                                 "type": "basic"
                             }
                         ]
