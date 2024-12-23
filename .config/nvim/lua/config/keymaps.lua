@@ -22,3 +22,18 @@ key("n", "<m-BS>", "dbx", { desc = "Detele word backwards" })
 key("i", "<m-BS>", "<esc>dbxi", { desc = "Detele word backwards" })
 
 key("n", "<leader>e", "<cmd>Oil<CR>", { desc = "Open oil" })
+
+key("n", "ss", "<cmd>split<CR>", { desc = "split pane" })
+key("n", "sv", "<cmd>vsplit<CR>", { desc = "split vertical pane" })
+
+vim.keymap.del("n", "<C-l>")
+vim.keymap.del("n", "<C-k>")
+vim.keymap.del("n", "<C-j>")
+vim.keymap.del("n", "<C-h>")
+
+vim.keymap.set("n", "<C-h>", "<Cmd>NvimTmuxNavigateLeft<CR>")
+vim.keymap.set("n", "<C-j>", "<Cmd>NvimTmuxNavigateDown<CR>")
+vim.keymap.set("n", "<C-k>", "<Cmd>NvimTmuxNavigateUp<CR>")
+vim.keymap.set("n", "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>")
+vim.keymap.set("n", "<C-\\>", "<Cmd>NvimTmuxNavigateLastActive<CR>")
+vim.keymap.set("n", "<C-Space>", "<Cmd>NvimTmuxNavigateNext<CR>")
