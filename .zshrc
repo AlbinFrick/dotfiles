@@ -94,17 +94,17 @@ alias x="exit"
 alias oo="cd ~/EDF/private/notes/"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 ## NB
-alias n="nb"
-function nad {
-    local today=$(date +%Y-%m-%d)
-    local content="# $today"$'\n'"#journal"  # Create the content with a literal newline
-    nb a $today.md $content 
-}
-
-function ned {
-    local today=$(date +%Y-%m-%d)
-    nb e $today 
-}
+# alias n="nb"
+# function nad {
+#     local today=$(date +%Y-%m-%d)
+#     local content="# $today"$'\n'"#journal"  # Create the content with a literal newline
+#     nb a $today.md $content 
+# }
+#
+# function ned {
+#     local today=$(date +%Y-%m-%d)
+#     nb e $today 
+# }
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -129,11 +129,6 @@ export PATH="/Users/albin.frick/.rd/bin:$PATH"
 export EDITOR=/opt/homebrew/bin/nvim
 export VISUAL=/opt/homebrew/bin/nvim
 
-# Functions 
-function branch  {
-    echo "$1" | sed -e 's/ /-/g' | tr '[:upper:]' '[:lower:]' | pbcopy
-}
-
 # Add all script in bin folder to path
 export PATH=~/bin:$PATH
 
@@ -146,3 +141,13 @@ export PATH="~/.config/emacs/bin:$PATH"
 if [ -f "$HOME/.env" ]; then
   export $(grep -v '^#' "$HOME/.env" | xargs)
 fi
+
+# Yazi setup
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
