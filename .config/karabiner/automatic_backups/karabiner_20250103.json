@@ -3495,12 +3495,12 @@
                         ]
                     },
                     {
-                        "description": "tab to hyper",
+                        "description": "d to hyper",
                         "manipulators": [
                             {
-                                "description": "tab = tab(click) | hyper(hold)",
+                                "description": "d = d(click) | hyper(hold)",
                                 "from": {
-                                    "key_code": "tab",
+                                    "key_code": "d",
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [
@@ -3509,7 +3509,7 @@
                                         "modifiers": ["right_command", "right_control", "right_option"]
                                     }
                                 ],
-                                "to_if_alone": [{ "key_code": "tab" }],
+                                "to_if_alone": [{ "key_code": "d" }],
                                 "type": "basic"
                             },
                             {
