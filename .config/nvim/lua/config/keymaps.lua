@@ -18,8 +18,8 @@ key("n", "<leader>wf", "<cmd>:w<cr>", { desc = "Write File" })
 
 key("n", "<leader>z", "<cmd>ZenMode<cr>", { desc = "Zen mode" })
 
-key("n", "<m-BS>", "dbx", { desc = "Detele word backwards" })
-key("i", "<m-BS>", "<esc>dbxi", { desc = "Detele word backwards" })
+-- key("n", "<m-BS>", "dbx", { desc = "Detele word backwards" })
+-- key("i", "<m-BS>", "<esc>dbxi", { desc = "Detele word backwards" })
 
 key("n", "<leader>e", "<cmd>Oil<CR>", { desc = "Open oil" })
 

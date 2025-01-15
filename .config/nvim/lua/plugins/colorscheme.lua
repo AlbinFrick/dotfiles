@@ -1,8 +1,16 @@
 return {
-  -- add gruvbox
-  -- { "ellisonleao/gruvbox.nvim" },
+  -- add catppuccin
 
-  -- Configure LazyVim to load gruvbox
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      require("catppuccin").setup()
+    end,
+  },
+
+  --Configure LazyVim to load catppuccin
   {
     "LazyVim/LazyVim",
     opts = {
