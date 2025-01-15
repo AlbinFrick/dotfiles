@@ -71,6 +71,7 @@ zstyle ':completion:*' menu no
 # zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
+alias air='~/.air'
 alias c='clear'
 alias t="tmux"
 alias ze="cd ~/.config/zellij/ && zellij options --default-cwd ~"
