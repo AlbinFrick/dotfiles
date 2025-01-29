@@ -1,5 +1,17 @@
 font-family = MesloLGS Nerd Font Mono
 font-size = 16
-theme = catppuccin-mocha
+theme = tokyonight_moon
 
 keybind = global:cmd+shift+1=toggle_quick_terminal
+
+# Move between splits
+keybind = cmd+shift+l=goto_split:right
+keybind = cmd+shift+h=goto_split:left
+keybind = cmd+shift+k=goto_split:top
+keybind = cmd+shift+j=goto_split:bottom
+
+# Resize splits
+keybind = cmd+alt+shift+l=resize_split:right,30
+keybind = cmd+alt+shift+h=resize_split:left,30
+keybind = cmd+alt+shift+k=resize_split:up,30
+keybind = cmd+alt+shift+j=resize_split:down,30
