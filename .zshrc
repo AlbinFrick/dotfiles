@@ -152,3 +152,9 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/albin.frick/.lmstudio/bin"
+
+# Added by Windsurf
+export PATH="/Users/albin.frick/.codeium/windsurf/bin:$PATH"
