@@ -123,6 +123,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/albin.frick/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
@@ -132,11 +133,6 @@ export VISUAL=/opt/homebrew/bin/nvim
 
 # Add all script in bin folder to path
 export PATH=~/bin:$PATH
-
-PATH=~/.console-ninja/.bin:$PATH
-
-# Emacs
-export PATH="~/.config/emacs/bin:$PATH"
 
 # Load environment variables from .env file
 if [ -f "$HOME/.env" ]; then
